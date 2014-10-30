@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showPressed:(id)sender;
+- (IBAction)showWithOverlayPressed:(id)sender;
+- (IBAction)dismissPressed:(id)sender;
 
 @end
 

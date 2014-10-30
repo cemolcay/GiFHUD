@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-Vf-oUy">
+                                <rect key="frame" x="281" y="65" width="39" height="30"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VL8-lA-QPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9f-AE-Ig9">
+                                <rect key="frame" x="273" y="562" width="54" height="30"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FYe-Ac-jDs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gV-qm-uP4">
+                                <rect key="frame" x="189" y="103" width="223" height="30"/>
+                                <state key="normal" title="Show with overlay for 2 seconds">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithOverlayPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JrY-qs-UMv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="h9f-AE-Ig9" secondAttribute="centerX" id="42f-CJ-leC"/>
+                            <constraint firstAttribute="centerY" secondItem="h9f-AE-Ig9" secondAttribute="centerY" id="8GM-TR-Eon"/>
+                            <constraint firstItem="gJf-Vf-oUy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="90" id="ATX-KT-9HZ"/>
+                            <constraint firstAttribute="centerY" secondItem="2gV-qm-uP4" secondAttribute="centerY" id="Ab8-HX-yHm"/>
+                            <constraint firstAttribute="centerX" secondItem="gJf-Vf-oUy" secondAttribute="centerX" id="DJO-NS-AGC"/>
+                            <constraint firstAttribute="centerX" secondItem="2gV-qm-uP4" secondAttribute="centerX" id="ESF-DC-dzY"/>
+                            <constraint firstAttribute="centerX" secondItem="gJf-Vf-oUy" secondAttribute="centerX" id="F9b-p1-S7B"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h9f-AE-Ig9" secondAttribute="bottom" constant="8" id="PrK-91-7T5"/>
+                            <constraint firstAttribute="centerX" secondItem="h9f-AE-Ig9" secondAttribute="centerX" id="RcK-VK-qoL"/>
+                            <constraint firstAttribute="centerY" secondItem="gJf-Vf-oUy" secondAttribute="centerY" id="a9D-6R-vmM"/>
+                            <constraint firstItem="2gV-qm-uP4" firstAttribute="top" secondItem="gJf-Vf-oUy" secondAttribute="bottom" constant="8" id="qP7-n1-Ifk"/>
+                            <constraint firstAttribute="centerX" secondItem="2gV-qm-uP4" secondAttribute="centerX" id="szu-O3-FhY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ab8-HX-yHm"/>
+                                <exclude reference="szu-O3-FhY"/>
+                                <exclude reference="DJO-NS-AGC"/>
+                                <exclude reference="a9D-6R-vmM"/>
+                                <exclude reference="42f-CJ-leC"/>
+                                <exclude reference="8GM-TR-Eon"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

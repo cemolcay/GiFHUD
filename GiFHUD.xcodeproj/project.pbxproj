@@ -14,6 +14,8 @@
 		B2FD744D1A0239FF00FF6D47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FD744C1A0239FF00FF6D47 /* Images.xcassets */; };
 		B2FD74501A0239FF00FF6D47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FD744E1A0239FF00FF6D47 /* LaunchScreen.xib */; };
 		B2FD745C1A0239FF00FF6D47 /* GiFHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD745B1A0239FF00FF6D47 /* GiFHUDTests.m */; };
+		B2FD74671A023A1B00FF6D47 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FD74661A023A1B00FF6D47 /* GiFHUD.m */; };
+		B2FD74691A02425600FF6D47 /* pika.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2FD74681A02425600FF6D47 /* pika.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		B2FD74551A0239FF00FF6D47 /* GiFHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiFHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FD745A1A0239FF00FF6D47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FD745B1A0239FF00FF6D47 /* GiFHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiFHUDTests.m; sourceTree = "<group>"; };
+		B2FD74651A023A1B00FF6D47 /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		B2FD74661A023A1B00FF6D47 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		B2FD74681A02425600FF6D47 /* pika.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pika.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		B2FD743E1A0239FF00FF6D47 /* GiFHUD */ = {
 			isa = PBXGroup;
 			children = (
+				B2FD74681A02425600FF6D47 /* pika.gif */,
 				B2FD74431A0239FF00FF6D47 /* AppDelegate.h */,
 				B2FD74441A0239FF00FF6D47 /* AppDelegate.m */,
 				B2FD74461A0239FF00FF6D47 /* ViewController.h */,
@@ -89,6 +95,8 @@
 				B2FD744C1A0239FF00FF6D47 /* Images.xcassets */,
 				B2FD744E1A0239FF00FF6D47 /* LaunchScreen.xib */,
 				B2FD743F1A0239FF00FF6D47 /* Supporting Files */,
+				B2FD74651A023A1B00FF6D47 /* GiFHUD.h */,
+				B2FD74661A023A1B00FF6D47 /* GiFHUD.m */,
 			);
 			path = GiFHUD;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 			files = (
 				B2FD744B1A0239FF00FF6D47 /* Main.storyboard in Resources */,
 				B2FD74501A0239FF00FF6D47 /* LaunchScreen.xib in Resources */,
+				B2FD74691A02425600FF6D47 /* pika.gif in Resources */,
 				B2FD744D1A0239FF00FF6D47 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				B2FD74481A0239FF00FF6D47 /* ViewController.m in Sources */,
 				B2FD74451A0239FF00FF6D47 /* AppDelegate.m in Sources */,
+				B2FD74671A023A1B00FF6D47 /* GiFHUD.m in Sources */,
 				B2FD74421A0239FF00FF6D47 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +422,7 @@
 				B2FD74611A0239FF00FF6D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FD74621A0239FF00FF6D47 /* Build configuration list for PBXNativeTarget "GiFHUDTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				B2FD74641A0239FF00FF6D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

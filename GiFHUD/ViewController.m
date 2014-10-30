@@ -7,21 +7,34 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "GiFHUD.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //Setup GiFHUD image
+    [GiFHUD setGifWithImageName:@"pika.gif"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)showPressed:(id)sender {
+    [GiFHUD show];
+}
+
+- (IBAction)showWithOverlayPressed:(id)sender {
+    [GiFHUD showWithOverlay];
+    
+    // dismiss after 2 seconds
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [GiFHUD dismiss];
+    });
+}
+
+- (IBAction)dismissPressed:(id)sender {
+    [GiFHUD dismiss];
 }
 
 @end
