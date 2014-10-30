@@ -25,6 +25,11 @@ Thats it ! <br>
 Just use `[GiFHUD show]` or `[GiFHUD showWithOverlay]` for showing the hud. <br>
 `[GiFHUD dismiss]` for dismissing the hud.
 
+    + (void)setGifWithImages:(NSArray *)images;
+    + (void)setGifWithImageName:(NSString *)imageName;
+    + (void)setGifWithURL:(NSURL *)gifUrl;
+
+You can init your gif with giving its `NSString` name, `NSBundle` url or `NSArray` of `UIImage`s.
 
 Optional values
 ---------------
