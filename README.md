@@ -45,6 +45,6 @@ If you want to customise the looking just edit these values on the top of .m fil
 Credits
 =======
 
-The animated gif to UIImage library i used
+The animated gif to UIImage library i used: <br>
 https://github.com/mayoff/uiimage-from-animated-gif
 
