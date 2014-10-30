@@ -12,17 +12,17 @@ Demo
 Usage
 -----
 
-Copy & paste the GiFHUD.h/m files to your project.
-Add your gif file or image sequance files to your project.
-Import `GifHUD.h`
+Copy & paste the GiFHUD.h/m files to your project. <br>
+Add your gif file or image sequance files to your project. <br>
+Import `GifHUD.h` 
 
     //Setup GiFHUD image
     [GiFHUD setGifWithImageName:@"pika.gif"];
     [GiFHUD show];
 
-Thats it !
+Thats it ! <br>
 
-Just use `[GiFHUD show]` or `[GiFHUD showWithOverlay]` for showing the hud.
+Just use `[GiFHUD show]` or `[GiFHUD showWithOverlay]` for showing the hud. <br>
 `[GiFHUD dismiss]` for dismissing the hud.
 
 
