@@ -42,3 +42,9 @@ Optional values
 If you want to customise the looking just edit these values on the top of .m file.
 
 
+Credits
+=======
+
+The animated gif to UIImage library i used
+https://github.com/mayoff/uiimage-from-animated-gif
+
